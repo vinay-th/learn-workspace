@@ -20,7 +20,7 @@ In this repository, you'll find a mishmash of code, experiments, and projects as
 
 ## Connect with Me:
 
-- **Twitter:** Follow me [@VinayCodes](https://twitter.com/code_with_vinay) for updates, coding memes, and occasional rants about semicolons.
+- **Twitter:** Follow me [@code_with_vinay](https://twitter.com/code_with_vinay) for updates, coding memes, and occasional rants about semicolons.
 - **LinkedIn:** Connect with me on [LinkedIn](www.linkedin.com/in/vinay-thakor) for professional networking and discussions about the future of tech.
 
 ## Let's Learn and Code Together! 😎
