@@ -1,0 +1,7 @@
+let arr = [1, 2, 3, 4];
+console.log(Math.min(...arr));
+console.log(...arr);
+let arrCpy = [...arr];
+console.log(arrCpy);
+arrCpy.push(6);
+console.log(arrCpy);
