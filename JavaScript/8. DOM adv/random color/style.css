@@ -1,0 +1,11 @@
+#myDiv {
+  height: 200px;
+  width: 700px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+button {
+  height: 30px;
+  width: 130px;
+  font-size: 1rem;
+}
