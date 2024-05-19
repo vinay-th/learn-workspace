@@ -65,7 +65,7 @@ Check out the live demo of the Simon Game [here](https://hawk-10.github.io/simon
 
 ## 📷 Screenshots
 
-![Gameplay Screenshot](https://via.placeholder.com/800x600?text=Gameplay+Screenshot)
+![Gameplay Screenshot](image.png)
 
 ## 🙌 Contributing
 
