@@ -6,6 +6,9 @@ let colors = ["red", "yellow", "green", "purple"];
 let started = false;
 let level = 0;
 
+let hehe = new Audio("hehe.mp3");
+let over = new Audio("over.mp3");
+
 let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", function () {
@@ -36,6 +39,7 @@ function userFlash(btn) {
 function levelUp() {
   // level up and printing on screen
   level++;
+  userSequence = [];
   h2.innerText = `Level: ${level}`;
 
   //random button choose
@@ -50,11 +54,28 @@ function levelUp() {
   console.log(gameSequence);
 }
 
-function checkAns() {
-  let idx = level - 1;
+function checkAns(idx) {
   if (userSequence[idx] === gameSequence[idx]) {
-    console.log("Same value");
-  } else h2.innerText = "Game over. Press any key to restart";
+    if (userSequence.length == gameSequence.length) {
+      hehe.play();
+      setTimeout(levelUp, 1000);
+    }
+  } else {
+    h2.innerText = "Game over. Press any key to restart";
+    over.play();
+    level = 0;
+    gameSequence = [];
+    started = false;
+
+    document.addEventListener("keypress", function () {
+      if (started == false) {
+        console.log("Game started");
+        started = true;
+
+        levelUp();
+      }
+    });
+  }
 }
 
 function btnPress() {
@@ -63,7 +84,7 @@ function btnPress() {
 
   let userColor = colors[btn.innerText - 1];
   userSequence.push(userColor);
-  checkAns();
+  checkAns(userSequence.length - 1);
 }
 
 let allBtns = document.querySelectorAll(".btn");
