@@ -7,11 +7,16 @@ body {
   cursor: pointer;
 }
 .btn {
-  height: 150px;
-  width: 150px;
-  margin: 0.75rem;
+  height: 250px;
+  width: 250px;
+  margin: 1rem;
   border: 7px solid black;
   border-radius: 20%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.25s, transform 0.1s;
 }
 .red {
   background-color: #d95980;
@@ -30,4 +35,29 @@ body {
 }
 .userFlash {
   background-color: rgb(255, 205, 136);
+}
+
+@media (max-width: 600px) {
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+  }
+
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }
