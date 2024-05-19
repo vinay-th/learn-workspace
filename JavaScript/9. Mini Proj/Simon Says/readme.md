@@ -1,6 +1,6 @@
 # 🎉 Welcome to the Simon Game! 🎉
 
-![Simon Game](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Simon_Electronic_Game.jpg/800px-Simon_Electronic_Game.jpg)
+![Simon Game](simon logo.png)
 
 Welcome to the amazing and colorful world of the **Simon Game**! 🌈✨ Get ready to challenge your memory and have tons of fun along the way. This classic game will keep you on your toes as you try to follow the sequence of colors and sounds. Can you beat your high score? Let's find out! 🚀
 
