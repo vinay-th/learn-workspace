@@ -43,7 +43,7 @@ Welcome to the amazing and colorful world of the **Simon Game**! 🌈✨ Get rea
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/vinay-th/learn-workspace/JavaScript/9. Mini Proj/Simon Says.git
+   git clone https://github.com/vinay-th/learn-workspace/blob/main/JavaScript/9.%20Mini%20Proj/Simon%20Says/
    ```
 2. **Navigate to the project directory**:
    ```bash
