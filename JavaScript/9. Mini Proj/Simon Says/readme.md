@@ -26,6 +26,10 @@ Welcome to the amazing and colorful world of the **Simon Game**! 🌈✨ Get rea
 - **Keyboard**: Press any key to start the game.
 - **Mouse**: Click on the colored buttons to repeat the sequence.
 
+## 🌐 Live Demo
+
+Check out the live demo of the Simon Game [here](https://hawk-10.github.io/simon-says/)! 🚀🎮
+
 ## 🎨 Color Buttons
 
 - 🔴 **Red**
@@ -54,9 +58,7 @@ Welcome to the amazing and colorful world of the **Simon Game**! 🌈✨ Get rea
    open index.html
    ```
 
-## 🌐 Live Demo
 
-Check out the live demo of the Simon Game [here](https://hawk-10.github.io/simon-says/)! 🚀🎮
 
 ## 🎶 Sounds
 
