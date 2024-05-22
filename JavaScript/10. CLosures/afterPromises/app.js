@@ -1,7 +1,7 @@
 function saveToDB(data) {
   return new Promise((resolve, reject) => {
     let netSpeed = Math.floor(Math.random() * 11);
-    if (netSpeed > 4) resolve("success: data saved");
+    if (netSpeed > 4) resolve("success, data: " + data);
     else reject("failure: data not saved");
   });
 }
@@ -32,16 +32,19 @@ function saveToDB(data) {
 //   });
 
 saveToDB("vinay")
-  .then(() => {
+  .then((result) => {
     console.log("Promise1: data stored");
+    console.log(result);
     return saveToDB("niomi");
   })
-  .then(() => {
+  .then((result) => {
     console.log("Promise2: data stored");
+    console.log(result);
     return saveToDB("oreo");
   })
-  .then(() => {
+  .then((result) => {
     console.log("Promise2: data stored");
+    console.log(result);
   })
   .catch(() => {
     console.log("promise rejected");
