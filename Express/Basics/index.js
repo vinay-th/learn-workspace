@@ -19,22 +19,22 @@ app.listen(port, () => {
 //   });
 // });
 
-// app.get("/", (req, res) => {
-//   res.send("You are at root page");
-// });
+app.get("/", (req, res) => {
+  res.send("You are at root page");
+});
 
-// app.get("/search", (req, res) => {
-//   res.send("You contacted search part");
-// });
+app.get("/search", (req, res) => {
+  res.send("You contacted search part");
+});
 
-// app.get("/contact", (req, res) => {
-//   res.send("You contacted contact part");
-// });
+app.get("/contact", (req, res) => {
+  res.send("You contacted contact part");
+});
 
-// app.get("*", (req, res) => {
-//   res.send("Page doesn't exist");
-// });
+app.get("*", (req, res) => {
+  res.send("Page doesn't exist");
+});
 
-// app.post("/", (req, res) => {
-//   res.send("You sent port req to root");
-// });
+app.post("/", (req, res) => {
+  res.send("You sent port req to root");
+});
