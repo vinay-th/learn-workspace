@@ -2,7 +2,7 @@
 
 Hey there, fellow coder! Welcome to my funky and cool GitHub repository where I, Vinay, am currently learning Java and JavaScript programming languages! 🎉
 
-In this repository, you'll find a mishmash of code, experiments, and projects as I dive into the fascinating world of coding. Whether you're a seasoned developer, a curious learner, or just passing by, feel free to explore, learn, and maybe even drop a comment or two! 💬
+In this repository, you'll find a mishmash of code, experiments, and projects as I dive into the fascinating world of coding. Whether you're a seasoned developer, a curious learner, or just passing by, feel free to explore, learn, and maybe even drop a comment or two!  💬
 
 ## What You'll Find Here:
 
