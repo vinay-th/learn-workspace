@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ig</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>page belongs to @<%= username %></h1>
+    <h1>page belongs to @<%= data.name %></h1>
     <button>Follow</button>
     <button>Like</button>
+    <p>
+      Followers: <%= data.followers %> &nbsp; Following: <%= data.following %>
+    </p>
+    <% for(let post of data.posts) {%>
+    <img src="<%= post.image %>" alt="some img" />
+    <p>
+      Like: <%= post.likes %> &nbsp;&nbsp;&nbsp; Comments: <%= post.comments %>
+    </p>
+    <% } %>
+    <script src="/app.js"></script>
   </body>
 </html>
