@@ -1,0 +1,25 @@
+body {
+  background-color: #ffd9c5;
+}
+.title {
+  color: #9d001f;
+}
+.user {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.content {
+  font-size: 1.3rem;
+}
+.post {
+  background-color: #ff6969;
+  height: 108.6px;
+  width: 500px;
+  position: relative;
+  margin: 10px 0;
+}
+h3 {
+  margin: 7px;
+}
