@@ -1,0 +1,26 @@
+table {
+  width: 75%;
+}
+table tr {
+  border: 1px solid black;
+}
+.edit-btn {
+  display: none;
+}
+.parent {
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sub {
+  background-color: #f19ed2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 50%;
+  height: 50%;
+}
