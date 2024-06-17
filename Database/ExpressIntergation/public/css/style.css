@@ -1,0 +1,56 @@
+body {
+  background-color: #fcdc94;
+  margin-bottom: 0%;
+}
+hr {
+  width: 95%;
+  margin-bottom: 0;
+}
+.container {
+  padding-bottom: 100px;
+}
+.chat {
+  background-color: #1a2130;
+  color: #fdffe2;
+  border-radius: 12px;
+  height: 100px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 5px;
+  position: relative;
+}
+.usr,
+.to {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.35rem;
+  font-style: italic;
+}
+.content {
+  text-align: center;
+}
+.messenger {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  background-color: hsl(219, 28%, 49%);
+  z-index: 1000;
+}
+.messenger form button {
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  display: inline;
+
+  position: relative;
+}
+#plane {
+  height: 15px;
+  width: 15px;
+}
