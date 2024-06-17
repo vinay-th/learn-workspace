@@ -135,3 +135,20 @@ app.post("/users/new", (req, res) => {
     res.send("Some error occurred ", err);
   }
 });
+
+// delete user
+app.delete("/users/:id", (req, res) => {
+  let { id } = req.params;
+
+  let q = `DELETE FROM test WHERE id = "${id}"`;
+
+  try {
+    connection.query(q, (err, result) => {
+      if (err) throw err;
+      console.log("User deleted");
+      res.redirect("/users");
+    });
+  } catch (err) {
+    res.send("Some error occurred ", err);
+  }
+});

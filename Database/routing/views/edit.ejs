@@ -35,6 +35,12 @@
           <br />
           <button>Submit</button>
         </form>
+        <form
+          action="http://localhost:8080/users/<%= data.id %>?_method=DELETE"
+          method="post"
+        >
+          <button class="del-btn">Delete</button>
+        </form>
       </div>
     </div>
   </body>
