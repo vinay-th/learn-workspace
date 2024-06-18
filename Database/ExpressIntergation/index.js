@@ -4,6 +4,7 @@ const path = require("path");
 const port = 8080;
 const mongoose = require("mongoose");
 const Chat = require("./models/chat.js");
+const methodOveride = require("method-override");
 
 app.listen(port, () => {
   console.log(`Server is running on port : ` + port);
@@ -21,6 +22,7 @@ main()
     console.log("Some error occurred ", err);
   });
 
+app.use(methodOveride("_method"));
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs");
@@ -53,4 +55,17 @@ app.post("/new", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+});
+
+// delete
+app.delete("/delete/:id", async (req, res) => {
+  try {
+    let { id } = req.params;
+    await Chat.findByIdAndDelete(id);
+    console.log("Chat deleted");
+    res.redirect("/chats#bottom");
+  } catch (err) {
+    console.log("Error deleting chat: ", err);
+    res.redirect("/chats#bottom");
+  }
 });

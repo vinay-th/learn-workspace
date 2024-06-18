@@ -54,3 +54,9 @@ hr {
   height: 15px;
   width: 15px;
 }
+#delete {
+  position: relative;
+  top: 4px;
+  left: 10px;
+  cursor: pointer;
+}

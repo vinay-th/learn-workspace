@@ -13,7 +13,14 @@
         <span class="usr">@<%= chat.from %></span>
         <p class="content"><%= chat.content %></p>
         <hr />
-        <span class="to" style="padding-left: 400px">@<%= chat.to %></span>
+        <form action="/delete/<%= chat._id %>?_method=DELETE" method="post">
+          <button id="delete">Delete</button>
+        </form>
+        <span
+          class="to"
+          style="padding-left: 400px; position: relative; bottom: 21px"
+          >@<%= chat.to %></span
+        >
       </div>
       <% } %>
     </div>
