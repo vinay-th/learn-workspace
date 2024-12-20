@@ -1,42 +1,40 @@
 package com.example.job.job.impl;
 
 import com.example.job.job.Job;
+import com.example.job.job.JobRepository;
 import com.example.job.job.JobsServices;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class JobsServicesImpl implements JobsServices {
-    private List<Job> jobs = new ArrayList<>();
-    private long nextId = 1L;
+//    private List<Job> jobs = new ArrayList<>();
+    JobRepository jobRepository;
+
+    public JobsServicesImpl(JobRepository jobRepository) {
+        this.jobRepository = jobRepository;
+    }
 
     @Override
     public List<Job> findAll() {
-        return jobs;
+        return jobRepository.findAll();
     }
 
     @Override
     public void createJob(Job job) {
-        job.setId(nextId++);
-        jobs.add(job);
+        jobRepository.save(job);
     }
 
     @Override
     public Job getJob(Long id) {
-        for (Job job : jobs) {
-            if (job.getId().equals(id)) {
-                return job;
-            }
-        }
-        return null;
+        return jobRepository.findById(id).orElse(null);
     }
 
     @Override
     public void deleteJob(Long id) {
         Job job = getJob(id);
-        jobs.remove(job);
+        jobRepository.deleteById(id);
     }
 
     @Override
@@ -47,6 +45,8 @@ public class JobsServicesImpl implements JobsServices {
         oldJob.setMinSalary(job.getMinSalary());
         oldJob.setMaxSalary(job.getMaxSalary());
         oldJob.setLocation(job.getLocation());
+
+        jobRepository.save(oldJob);
     }
 }
 
